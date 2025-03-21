@@ -58,6 +58,7 @@ h6 {
 .header-navigation {
         display: flex;
         gap: 76px;
+        align-items: center;
 }
 
 .header-logo {
@@ -70,6 +71,7 @@ h6 {
         color: #4d5ae5;
         padding-top: 24px;
         padding-bottom: 24px;
+        margin-right: 76px;
 }
 .header-logo-color {
         color: #2e2f42;
@@ -127,12 +129,11 @@ h6 {
 
 .hero {
         background-color: #2e2f42;
-
+        padding-top: 188px;
+        padding-bottom: 188px;
 }
 
-.hero-wrapper { 
-padding: 188px;
-}
+
 .hero-title {
         font-weight: 700;
         font-size: 56px;
@@ -146,6 +147,8 @@ padding: 188px;
         margin-bottom: 48px;
 }
 .hero-btn {
+        display: block;
+        margin: 0 auto;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -154,11 +157,9 @@ padding: 188px;
         border-radius: 4px;
         background-color: #4D5AE5;
         border: none;
-        width: 169px;
+        min-width: 169px;
         height: 56px;
-
-        
-        
+        cursor: pointer;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -172,6 +173,7 @@ padding: 188px;
 
 
 /*-------------------------FEATURES----------------------*/
+ 
 
 .features {
         padding-top: 120px;
@@ -232,8 +234,12 @@ padding: 188px;
 .team-item {
         background-color: #FFFFFF;
         width: calc((100% - 72) / 4);
-        padding-bottom: 32px;
+        border-radius: 0px 0px 4px 4px;
 }   
+.team-worker {
+        padding-top: 32px;
+        padding-bottom: 32px;
+}
 .team-subtitle {
         font-weight: 500;
         font-size: 20px;
@@ -241,7 +247,6 @@ padding: 188px;
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
-        margin-top: 32px;
         margin-bottom: 8px;
 }
 .team-text {
@@ -322,8 +327,8 @@ padding: 188px;
 .footer {
         background-color: #2e2f42;
         display: flex;
-        padding: 100px;
-        padding: 100px;
+        padding-top: 100px;
+        padding-bottom: 100px;
 }
 .footer-container {
         max-width: 264px;
@@ -331,6 +336,7 @@ padding: 188px;
 }
         
 .footer-logo-link {
+        display: inline-block;
         font-family: "Raleway", sans-serif;
         font-weight: 700;
         font-size: 18px;
@@ -338,6 +344,7 @@ padding: 188px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
+        margin-bottom: 16px;
 }
 .footer-logo-color {
         color: #f4f4fd;
